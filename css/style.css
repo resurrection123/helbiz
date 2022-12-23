@@ -1,0 +1,52 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.row{
+  padding: 0 20px;
+}
+header .navbar{
+  line-height: 80px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(48, 43, 43);
+}
+header .navbar .menu {
+  text-align: right;
+}
+header .navbar .menu ul li {
+  padding-left: 15px;
+}
+header .navbar .menu ul li .languages span:nth-child(2)::after ,
+header .navbar .menu ul li .languages span:nth-child(2)::before{
+  content: "|";
+  font-size: inherit;
+  font-weight: bold;
+  padding: 0 10px;
+  font-size: 18px;
+}
+header .jumbotron{
+  height: 700px;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+header .jumbotron .text-jumbo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+header .jumbotron .text-jumbo h1 {
+  font-size: 60px;
+}
+header .jumbotron .text-jumbo span{
+  margin: 25px 0;
+  display: inline-block;
+  font-size: 22px;
+}
+.mobile i{
+  font-size: 24px;
+}
