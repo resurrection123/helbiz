@@ -1,18 +1,22 @@
 body{
   font-family: 'Open Sans', sans-serif;
+  color: rgb(48, 43, 43);
 }
 .row{
-  padding: 0 20px;
+  padding: 0 15px;
 }
 header .navbar{
   line-height: 80px;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-  color: rgb(48, 43, 43);
 }
 header .navbar .menu {
   text-align: right;
+}
+i{
+  vertical-align: baseline;
+  margin-left: 10px;
 }
 header .navbar .menu ul li {
   padding-left: 15px;
@@ -21,7 +25,6 @@ header .navbar .menu ul li .languages span:nth-child(2)::after ,
 header .navbar .menu ul li .languages span:nth-child(2)::before{
   content: "|";
   font-size: inherit;
-  font-weight: bold;
   padding: 0 10px;
   font-size: 18px;
 }
@@ -49,4 +52,173 @@ header .jumbotron .text-jumbo span{
 }
 .mobile i{
   font-size: 24px;
+}
+section{
+  margin: 50px 0;
+  padding: 20px 0;
+}
+#bike .row {
+  text-align: center;
+  font-size: 22px;
+}
+#bike .row h1 {
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+#bike .row h1 span {
+  font-weight: normal;
+}
+#bike .row a {
+  color: #0070C8;
+  margin-bottom: 20px;
+  display: block;
+}
+#bike .row p {
+  margin: 30px 0;
+}
+#bike .row [class*="col-"] img{
+ width: 80%;
+}
+#bike .row [class*="col-"] i{
+  color: grey;
+ }
+ #steps .top-banner {
+  height: 500px;
+  width: 100%;
+  background-image: url("../img/index-banner.1f6fd0a.jpg");
+  background-size: cover;
+ }
+ #steps .bottom-banner {
+  margin-top: 60px;
+  text-align: center;
+ }
+ #steps .bottom-banner h1 {
+  font-size: 40px;
+ }
+
+ #steps .bottom-banner .row img{
+  width: 60%;
+ }
+ #steps .bottom-banner .row .phone img {
+  position: relative;
+  margin-top: -66%;
+ }
+ #SmartMobility .body{
+  text-align: center;
+  color: white;
+  background-image:url("../img/scooter.f0a0397.jpg");
+  height: 500px;
+}
+#SmartMobility .row .content{
+  position: relative;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 18px;
+ }
+ #SmartMobility .row .content p,
+ #app .row .box p
+ {
+  margin: 30px 0;
+ }
+ #SmartMobility .row .content h1{
+  font-size: 45px;
+ }
+ #app .row .box{
+  width: calc(100% - 20px);
+  height: 650px;
+  background: #3C5062;
+  text-align: center;
+  padding: 40px;
+  color: white;
+  font-size: 22px;
+}
+ #app .row .box.last{
+  margin-left: 20px;
+  background-image: url("../img/city.7c8c928.jpg");
+  background-size: cover;
+}
+#app .row .box h2{
+  font-weight: 100;
+  font-size: 40px;
+}
+#app .row .box a{
+  padding-right: 20px;
+}
+#app .row [class*="col-"]:first-child .box {
+  background-image: url("../img/iphone-bg.2dae1bd.png");
+  background-repeat: no-repeat;
+  background-position: 50% 131%
+}
+#app::after{
+  content: "";
+  background-image: url("../img/banner-bottom.png");
+  height: 500px;
+  display: block;
+  margin-top: 80px;
+  background-size: cover;
+  background-position: center;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 70px 0;
+  font-size: 15px;
+  text-align: center;
+}
+footer .row h2{
+  font-size: 28px;
+  letter-spacing: 10px;
+}
+footer  .top-footer ul li:not(:first-child){
+  display: block;
+  padding: 10px 0;
+  color: grey;
+}
+footer  .top-footer ul li:not(:first-child):hover{
+  color: white;
+}
+footer  .top-footer ul li:first-child{
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer .middle-footer{
+  padding: 30px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin: 40px 0 ;
+}
+footer .app-footer img{
+  border: 1px solid white;
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width:767px) {
+  #app .row .box{
+    margin: 0 auto !important;
+  }
+  .col-xs-6{
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width:480px) {
+  #app .row [class*="col-"]:first-child .box {
+    background-size: 80%;
+    background-position: 50% bottom
+  }
+  #steps .bottom-banner .row .phone img {
+    position: relative;
+    margin-top: -148%;
+    width: 100%;
+   }
 }
