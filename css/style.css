@@ -161,7 +161,6 @@ section{
   background-size: cover;
   background-position: center;
 }
-
 footer{
   background-color: black;
   color: white;
@@ -186,7 +185,6 @@ footer  .top-footer ul li:first-child{
   font-weight: bold;
   text-transform: uppercase;
 }
-
 footer .middle-footer{
   padding: 30px 0;
   border-top: 1px solid white;
@@ -202,7 +200,6 @@ footer .app-footer img{
   padding: 5px;
   border-radius: 20px;
 }
-
 @media screen and (max-width:767px) {
   #app .row .box{
     margin: 0 auto !important;
